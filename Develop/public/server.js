@@ -7,7 +7,7 @@ const { DH_CHECK_P_NOT_SAFE_PRIME } = require("constants");
 
 
 const app = express();
-const PORT = process.env.PORT || 4023;
+var PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
@@ -42,11 +42,11 @@ app.delete("/api/notes/:id", (req, res) => {
 //HTML calls
 
 app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "index.html"));
+    res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
 app.get("/notes", function (req, res) {
-    res.sendFile(path.join(__dirname, "notes.html"));
+    res.sendFile(path.join(__dirname, "/public/notes.html"));
 });
 
 
