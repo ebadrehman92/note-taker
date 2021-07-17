@@ -42,11 +42,11 @@ app.delete("/api/notes/:id", (req, res) => {
 //HTML calls
 
 app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "/public/index.html"));
+    res.sendFile(path.join(__dirname, "index.html"));
 });
 
 app.get("/notes", function (req, res) {
-    res.sendFile(path.join(__dirname, "/public/notes.html"));
+    res.sendFile(path.join(__dirname, "notes.html"));
 });
 
 
