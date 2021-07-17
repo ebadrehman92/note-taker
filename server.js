@@ -9,15 +9,15 @@ const { DH_CHECK_P_NOT_SAFE_PRIME } = require("constants");
 const app = express();
 var PORT = process.env.PORT || 3000;
 
-// Middleware
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
 //Setting routes for APIs
-//This gets notes saved and joins it in db.json
+//Saving notes to db.json
 app.get("/api/notes", (req, res) => {
-    res.sendFile(path.join(__dirname, "/db/db.json"))
+    res.sendFile(path.join(__dirname, "./db/db.json"))
 });
 
 // Post function to add new notes to db.json
