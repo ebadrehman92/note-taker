@@ -3,6 +3,9 @@
 # Description 
 Create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
 
+<img width="1417" alt="noteTaker" src="https://user-images.githubusercontent.com/64440230/136471703-b0e9eccc-3ee2-4abe-99ff-75b992849a1b.png">
+
+
 # Details
 I'm presented with a page with existing notes listed in the left hand column, plus empty fields to enter a new note title and the note's text in the right hand column.
 
